@@ -1,2 +1,26 @@
-# os-c-survival
-在寒假期間磨練自己在實用性C語言的能力
+# \# OS / Embedded C Survival Project
+
+# 
+
+# Goal:
+
+# Prepare myself for Operating Systems and Embedded Operating Systems courses.
+
+# 
+
+# Principles:
+
+# \- Focus on memory, pointer, and system-level C
+
+# \- Every example must be explainable with memory layout
+
+# \- No magic, no copy-paste without understanding
+
+# 
+
+# Rule:
+
+# If I cannot draw the memory, I do not understand the code.
+
+# 
+
