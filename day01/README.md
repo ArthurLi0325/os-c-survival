@@ -59,6 +59,8 @@ int main() {
 ```c
 int main() {
     printf("Hello");
+    int *p = 0;
+    *p = 1;
     return 0;
 }
 
@@ -84,13 +86,14 @@ print p
 print *p
 info locals
 ```
-重點收穫：
-crash 可以被精準定位到「哪一行」
-可以即時檢查變數狀態
-segmentation fault 不再是黑盒事件
+
+- 重點收穫：
+- crash 可以被精準定位到「哪一行」
+- 可以即時檢查變數狀態
+- segmentation fault 不再是黑盒事件
 
 ## 總結
-C 程式的執行結果由 OS 決定，而非語言本身
-segmentation fault 是記憶體保護機制的結果，不是隨機錯誤
-gdb 是系統程式設計中不可或缺的工具
-debug 的本質是「驗證假設」，而非猜測
+- C 程式的執行結果由 OS 決定，而非語言本身
+- segmentation fault 是記憶體保護機制的結果，不是隨機錯誤
+- gdb 是系統程式設計中不可或缺的工具
+- debug 的本質是「驗證假設」，而非猜測
