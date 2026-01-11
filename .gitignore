@@ -1,0 +1,11 @@
+# build outputs / binaries
+*.o
+*.out
+a.out
+
+# day02 compiled binaries
+day02/mem_layout
+day02/return_local
+day02/uaf_reuse
+day02/uaf_reuse_asan
+day02/use_after_free
