@@ -1,11 +1,45 @@
-# build outputs / binaries
+# ==============================
+# OS-C-Survival .gitignore
+# ==============================
+
+# --------------------------------
+# Generic build outputs
+# --------------------------------
 *.o
+*.a
+*.so
 *.out
 a.out
 
-# day02 compiled binaries
-day02/mem_layout
-day02/return_local
-day02/uaf_reuse
-day02/uaf_reuse_asan
-day02/use_after_free
+# --------------------------------
+# Executables (Linux / WSL, no extension)
+# Ignore binaries generated inside day folders
+# but keep source files and markdown
+# --------------------------------
+day*/[A-Za-z0-9_-]*
+!day*/*.c
+!day*/*.h
+!day*/*.md
+
+# --------------------------------
+# Sanitizer / debug artifacts
+# --------------------------------
+*.dSYM/
+vgcore.*
+core
+core.*
+
+# --------------------------------
+# Editor / OS junk
+# --------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --------------------------------
+# Optional: temporary test files
+# --------------------------------
+tmp/
+temp/
